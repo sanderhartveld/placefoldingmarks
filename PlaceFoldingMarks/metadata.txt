@@ -1,13 +1,14 @@
 [general]
 name=Place Folding Marks
-description=Adds or replaces folding marks to a layout. Currently only  works on the first page of a layout.
-about=Adds or replaces folding marks to a layout. Currently only works on the first page of a layout.
-category=Print Layouts
+description=Adds or replaces folding marks to a layout. 
+about=Adds or replaces folding marks to a layout. This plugin is build on the assumtion that the legend is in the bottom right cornor of the page and not wider than the folded format. Currently only works on the first page of a layout. BACKLOG: Better documentation about how to fold a printed layout. Option to choose corner of legend. Other languages, multiple pages and automatic paper size/thickness adjustments.
 version=1.0
+homepage=https://github.com/sanderhartveld/placefoldingmarks/
+repository=https://github.com/sanderhartveld/placefoldingmarks/
 qgisMinimumVersion=3.10
 author=Sander Hartveld
 email=info@studiohartveld.nl
 supportsQt6=no
 experimental=False
 icon=:resources/icon_place_folding_marks.svg
-
+changelog=1.0 First functional version.
