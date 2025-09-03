@@ -1,8 +1,8 @@
 [general]
 name=Place Folding Marks
 description=Adds or replaces folding marks to a layout. 
-about=Adds or replaces folding marks to a layout. This plugin is build on the assumtion that the legend is in the bottom right cornor of the page and not wider than the folded format. Currently only works on the first page of a layout. BACKLOG: Better documentation about how to fold a printed layout. Option to choose corner of legend. Other languages, multiple pages and automatic paper size/thickness adjustments.
-version=1.1
+about=Adds or replaces folding marks to a layout. This plugin is build on the assumption that the legend is in the bottom right corner of the page and not wider than the folded format. Currently only works on the first page of a layout. BACKLOG: Better documentation about how to fold a printed layout. Option to choose corner of legend position in layout. Other languages. Multiple pages. Automatic paper size/thickness adjustments.
+version=1.1.0
 homepage=https://sanderhartveld.github.io/placefoldingmarks_pages/
 repository=https://github.com/sanderhartveld/placefoldingmarks/
 tracker=https://github.com/sanderhartveld/placefoldingmarks/issues
