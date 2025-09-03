@@ -1,0 +1,13 @@
+[general]
+name=Place Folding Marks
+description=Adds or replaces folding marks to a layout. Currently only  works on the first page of a layout.
+about=Adds or replaces folding marks to a layout. Currently only works on the first page of a layout.
+category=Print Layouts
+version=1.0
+qgisMinimumVersion=3.10
+author=Sander Hartveld
+email=info@studiohartveld.nl
+supportsQt6=no
+experimental=False
+icon=:resources/icon_place_folding_marks.svg
+

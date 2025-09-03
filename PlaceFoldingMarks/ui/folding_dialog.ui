@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FoldingDialog</class>
+ <widget class="QDialog" name="FoldingDialog">
+  <property name="windowTitle">
+   <string>Place Folding Marks</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelLayout">
+       <property name="text">
+        <string>Layout:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboLayout"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelPaperSize">
+       <property name="text">
+        <string>Formaat gevouwen tekening:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="comboPaperSize">
+       <item>
+        <property name="text">
+         <string>A4 (210 × 297 mm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>US Letter (8.5 × 11 inch)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>US Legal (8.5 × 14 inch)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <!---
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelPaperWeight">
+       <property name="text">
+        <string>Papiersoort:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboPaperWeight">
+       <item>
+        <property name="text">
+         <string>Dun (80g/m²)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Normaal (120g/m²)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dik (200g/m²)</string>
+        </property>
+       </item>
+      </widget>
+     </item> -->
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="lineThicknessLayout">
+     <item>
+      <widget class="QLabel" name="labelLineThickness">
+       <property name="text">
+        <string>Lijndikte:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinLineThickness">
+       <property name="suffix">
+        <string> mm</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="lineLengthLayout">
+     <item>
+      <widget class="QLabel" name="labelLineLength">
+       <property name="text">
+        <string>Lijnlengte:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinLineLength">
+       <property name="suffix">
+        <string> mm</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnPlaceMarks">
+     <property name="text">
+      <string>Vouwlijnen plaatsen</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
