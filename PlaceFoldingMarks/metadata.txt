@@ -12,7 +12,8 @@ email=info@studiohartveld.nl
 supportsQt6=no
 experimental=False
 icon=:resources/icon.png
-changelog=1.0 First functional version.
-1.1 Add documentation in metadata.txt for publishing plugin in repo
+changelog=
+    1.1.0   (09-2025) Add documentation in for publishing plugin in repo
+    1.0.0   (09-2025) First functional version.
 server=False
 hasProcessingProvider=False
