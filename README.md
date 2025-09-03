@@ -1,6 +1,6 @@
 # Place Folding Marks
 
-Place Folding Marks Qgis plugin that adds or replaces folding marks in a layout. 
+Development and distribution repository for the Place Folding Marks Qgis plugin that adds or replaces folding marks in a layout. 
 
 # Plugin homepage and documentation
 https://sanderhartveld.github.io/placefoldingmarks_pages/
