@@ -13,7 +13,7 @@ supportsQt6=yes
 experimental=False
 icon=:resources/icon.png
 changelog=
-    2.0.0   (09-2025) Update for Qt6 compatebility
+    2.0.0   (09-2025) Update for Qt6 compatibility
     1.1.0   (09-2025) Add documentation in metadata for publishing plugin in repo
     1.0.0   (09-2025) First functional version.
 server=False
