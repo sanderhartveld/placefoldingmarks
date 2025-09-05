@@ -7,6 +7,7 @@ homepage=https://sanderhartveld.github.io/placefoldingmarks_pages/
 repository=https://github.com/sanderhartveld/placefoldingmarks/
 tracker=https://github.com/sanderhartveld/placefoldingmarks/issues
 qgisMinimumVersion=3.10
+qgisMaximumVersion=3.99
 author=Sander Hartveld
 email=info@studiohartveld.nl
 supportsQt6=no
