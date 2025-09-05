@@ -64,7 +64,7 @@ class PlaceFoldingMarksPlugin:
             hbox = QHBoxLayout(container)
             hbox.setContentsMargins(0, 0, 0, 0)
             hbox.addWidget(self.dlg.lblRemoveExisting)
-            hbox.addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum))
+            hbox.addItem(QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
             hbox.addWidget(self.dlg.chkRemoveExisting)
 
             # Voeg container onder spinLineThickness en boven btnPlaceMarks toe
@@ -84,7 +84,7 @@ class PlaceFoldingMarksPlugin:
         # Initiale sync uitvoeren
         self.on_layout_changed()
 
-        self.dlg.exec_()
+        self.dlg.exec()
 
     def on_layout_changed(self):
         #Update visibility of the text and checkbox depending on the chosen layout.
@@ -173,7 +173,7 @@ class PlaceFoldingMarksPlugin:
         layer.setWidthUnit(QgsUnitTypes.RenderMillimeters)
         # Flat line cap
         # (QGIS gebruikt Qt.PenCapStyle)
-        layer.setPenCapStyle(Qt.FlatCap)
+        layer.setPenCapStyle(Qt.PenCapStyle.FlatCap)
 
         symbol = QgsLineSymbol([layer])
         return symbol
