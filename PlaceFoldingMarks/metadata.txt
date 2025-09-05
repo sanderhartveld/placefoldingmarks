@@ -6,7 +6,7 @@ version=2.0.0
 homepage=https://sanderhartveld.github.io/placefoldingmarks_pages/
 repository=https://github.com/sanderhartveld/placefoldingmarks/
 tracker=https://github.com/sanderhartveld/placefoldingmarks/issues
-qgisMinimumVersion=3.10
+qgisMinimumVersion=3.28
 author=Sander Hartveld
 email=info@studiohartveld.nl
 supportsQt6=yes
@@ -14,6 +14,7 @@ experimental=False
 icon=:resources/icon.png
 changelog=
     2.0.0   (09-2025) Update for Qt6 compatibility
+    1.1.1   (09-2025) Prepare for Qt6 by adding MaximumVersion
     1.1.0   (09-2025) Add documentation in metadata for publishing plugin in repo
     1.0.0   (09-2025) First functional version.
 server=False
