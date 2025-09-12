@@ -53,7 +53,7 @@ class PlaceFoldingMarksPlugin:
             self.dlg.spinLineThickness.setValue(1)   # default line thickness = 1 mm
             self.dlg.btnPlaceMarks.clicked.connect(self.on_btnPlaceMarks_clicked)
 
-            # Container voor tekst + checkbox (altijd aanwezig)
+            # Container for tekst + checkbox (always present)
             self.dlg.chkRemoveExisting = QCheckBox()
             self.dlg.chkRemoveExisting.setVisible(False)  # standaard onzichtbaar
 
@@ -67,21 +67,21 @@ class PlaceFoldingMarksPlugin:
             hbox.addItem(QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
             hbox.addWidget(self.dlg.chkRemoveExisting)
 
-            # Voeg container onder spinLineThickness en boven btnPlaceMarks toe
+            # Add container under spinLineThickness and above btnPlaceMarks
             if self.dlg.layout():
                 layout = self.dlg.layout()
                 idx = layout.indexOf(self.dlg.btnPlaceMarks)
                 if idx != -1:
                     layout.insertWidget(idx, container)
 
-            # Synchroniseer wanneer de gebruiker een andere layout kiest
+            # Synchronize when the user choosed another layout
             self.dlg.comboLayout.currentIndexChanged.connect(self.on_layout_changed)
 
         has_layouts = self.populate_layout_dropdown()
         if not has_layouts:
             return
 
-        # Initiale sync uitvoeren
+        # Do initial sync
         self.on_layout_changed()
 
         self.dlg.exec()
@@ -162,9 +162,9 @@ class PlaceFoldingMarksPlugin:
 
     def build_base_symbol(self, line_thickness_mm):
         # -------------------------
-        # Bouw een basis-lijnsymbool (zwart, dikte in mm, flat cap).
-        # We gebruiken QgsSimpleLineSymbolLayer + QgsLineSymbol en retourneren het symbool.
-        # Dit symbool wordt vervolgens per polyline gecloned().
+        # Build a basic line symbol (black, thickness in mm, flat cap).
+        # We use QgsSimpleLineSymbolLayer + QgsLineSymbol and return the symbol.
+        # This sybmol will be cloned per polyline using clone()   
         # -------------------------
         
         layer = QgsSimpleLineSymbolLayer()
@@ -172,7 +172,6 @@ class PlaceFoldingMarksPlugin:
         layer.setWidth(float(line_thickness_mm))
         layer.setWidthUnit(QgsUnitTypes.RenderMillimeters)
         # Flat line cap
-        # (QGIS gebruikt Qt.PenCapStyle)
         layer.setPenCapStyle(Qt.PenCapStyle.FlatCap)
 
         symbol = QgsLineSymbol([layer])
@@ -275,4 +274,5 @@ class PlaceFoldingMarksPlugin:
         line_thickness = self.dlg.spinLineThickness.value()
 
         self.place_folding_marks(layout_name, folded_format_str, line_length, line_thickness)
+
         self.dlg.accept()
